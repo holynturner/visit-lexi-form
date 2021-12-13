@@ -5,15 +5,44 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" integrity="sha512-5fsy+3xG8N/1PV5MIJz9ZsWpkltijBI48gBzQ/Z2eVATePGHOkMIn+xTDHIfTZFVb9GMpflF2wOWItqxAP2oLQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"/>
     <link rel="stylesheet" href="style.css">
-    <title>Form</title>
+    <title>Sign up to visit Lexi!</title>
+
 </head>
 <body>
 <!--Your Code Goes Below this line-->
+<h1 id="title">Visit Lexi</h1>
+<p id="description"><em>Sign up to visit Lexi!</em></p>
+<form id="survey-form">
+    <div class="form-group">
+        <label for="name" id="name-label">Your full name</label>
+        <input class="u-full-width" type="text" placeholder="First, Last" id="name" name="name" required>
 
+        <label for= "number" id="number-label"> Age</label>
+        <input  type="number" name="age" id="number" placeholder="age" min="0" max="110" class= "form-control" required>
 
-<!--Your Code Goes Above this line-->
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <label for="exampleTimeInput">Your desired time</label>
+        <input class="u-full-width" type="time" placeholder="00:00am/pm" id="exampleTimeInput">
+
+        <label for="exampleDateInput">Your desired date</label>
+        <input class="u-full-width" type="date" placeholder="00/00/0000" id="exampleDateInput">
+
+        <label for="email" id="email-label">Your email</label>
+        <input class="u-full-width" type="email" placeholder="you@email.com" id="email" required>
+
+        <label for="comments"> Additional Comments</label>
+        <textarea id="comments">type away, if necessary. </textarea>
+
+        <label class="i-am-not-a-robot">
+            <input type="checkbox" value="not-redhead!">
+            <span class="label-body"> I AM NOT A REDHEAD</span>
+            <input type="checkbox" value="redhead!">
+            <span class="label-body" > I AM A REDHEAD</span>
+        </label>
+
+        <input id="submit" class="button-primary" type="submit" value="Submit">
+    </div>
+</form>
 </body>
 </html>

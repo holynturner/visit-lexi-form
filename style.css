@@ -1,0 +1,21 @@
+body {background-color: #DEFFCE;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+ #submit{
+     background-color:#FC639A;
+    border:none;
+    color:white;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #FC639A;
+    opacity: 1; /* Firefox */
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
